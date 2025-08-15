@@ -1,3 +1,4 @@
-#Git Cheat Sheet
-> This file is a reference for common Git commands and is highly practical.  
-> These commands are written in an HTML file format, and you can use it as a handy resource.
+# Git Cheat Sheet
+
+This file serves as a quick reference for commonly used Git commands and is highly practical for everyday development.  
+The commands are presented in an HTML file format, making it easy for you to use and adapt as needed.

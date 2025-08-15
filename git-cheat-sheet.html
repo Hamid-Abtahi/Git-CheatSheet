@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+   
+    <title>Git Cheat Sheet</title>
+
+
+
+    <style>
+        body {
+            font-family: 'JetBrains Mono';
+            
+              
+        }
+        .container{
+            position: relative;
+            z-index: 1;
+            display: flex;
+            justify-content: center;
+            padding-bottom: 2rem;
+            /* flex-direction: column; */
+
+        }
+        .parent{
+            background-image: 
+            linear-gradient(to bottom, 
+            rgba(0,0,0,0.8) 0%,
+            rgba(0,0,0,0) 20%,
+            rgba(0,0,0,0) 80%,
+            rgba(0,0,0,0.8) 100%
+            
+            ),
+            url('210908.jpg'); 
+            
+            
+            
+            background-size: contain, contain ;       
+            background-repeat: repeat, repeat;
+            
+            
+            
+             
+            /* flex-direction: column; */
+
+        }
+    </style>
+
+</head>
+<body>
+
+
+<div class="parent">
+    <div class="container">
+
+
+        <div class="card" style="width:1000px; margin-top: 3rem ; border:none ;">
+            <div class="card-header px-4" >
+                Git Configuration
+            </div>
+            <div class="card-body  bg-dark text-light px-4" >
+                # Set global username
+                <h6 class="card-title" style=" font-size: 20px;">git config --global user.name "Your Name"</h6>
+              <!-- <p class="card-text"></p> -->
+              <hr>
+              # Set global email
+              <h6 class="card-title" style=" font-size: 20px;">git config --global user.email "your.email@example.com"</h6>
+              <hr>
+              # Enable colored output
+              <h6 class="card-title" style=" font-size: 20px;">git config --global color.ui auto</h6>
+    
+              
+            </div>
+          </div>
+
+
+    </div>
+  
+
+
+
+      
+    <div class="container">
+
+
+        <div class="card" style="width:1000px; margin-top: 3rem ; border:none ;">
+            <div class="card-header px-4" >
+                Repository Management
+            </div>
+            <div class="card-body  bg-dark text-light px-4" >
+                # Initialize new local repository
+
+                <h6 class="card-title" style=" font-size: 20px;">git init</h6>
+              
+              <hr>
+              # Clone existing repository
+
+              <h6 class="card-title" style=" font-size: 20px;">git clone [repository-url]</h6>
+              <hr>
+              # Connect local repo to remote
+
+              <h6 class="card-title" style=" font-size: 20px;">git remote add origin [repository-url]</h6>
+    
+              
+            </div>
+          </div>
+
+
+    </div>
+
+</div>
+
+
+
+
+<div class="parent">
+
+    <div class="container">
+
+
+        <div class="card" style="width:1000px; margin-top: 3rem ; border:none ;">
+            <div class="card-header px-4" >
+                Branch Operations
+            </div>
+            <div class="card-body  bg-dark text-light px-4" >
+                # Create new branch
+
+
+                <h6 class="card-title" style=" font-size: 20px;">git branch [branch-name]</h6>
+              
+              <hr>
+              # Switch to branch
+
+
+              <h6 class="card-title" style=" font-size: 20px;">git switch [branch-name]</h6>
+              <hr>
+              # Create and switch to new branch
+
+
+
+              <h6 class="card-title" style=" font-size: 20px;">git switch -c [branch-name]</h6>
+              <hr>
+              # Merge branch
+
+
+
+
+              <h6 class="card-title" style=" font-size: 20px;">git merge [branch-name]</h6>
+              <hr>
+              # Delete branch
+
+
+
+              <h6 class="card-title" style=" font-size: 20px;">git branch -d [branch-name]</h6>
+    
+              
+            </div>
+          </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="container">
+
+
+        <div class="card" style="width:1000px; margin-top: 3rem ; border:none ;">
+            <div class="card-header px-4" >
+                Making Changes
+            </div>
+            <div class="card-body  bg-dark text-light px-4" >
+                # Stage changes
+
+
+
+
+                <h6 class="card-title" style=" font-size: 20px;">git add [file]</h6>
+              
+              <hr>
+              # Stage all changes
+
+
+              <h6 class="card-title" style=" font-size: 20px;">git add . </h6>
+              <hr>
+              # Commit changes
+
+
+
+              <h6 class="card-title" style=" font-size: 20px;">git commit -m "Commit message"</h6>
+              <hr>
+              # View commit history
+
+
+
+
+              <h6 class="card-title" style=" font-size: 20px;">git log</h6>
+              <hr>
+              # For single file history
+
+
+
+              <h6 class="card-title" style=" font-size: 20px;">git log --follow [filename]</h6>
+              <hr>
+              # Compare changes
+
+
+
+              <h6 class="card-title" style=" font-size: 20px;">git diff [branch1]..[branch2]</h6>
+              <h6 class="card-title" style=" font-size: 20px;">git show [commit-hash]</h6>
+              
+              
+            </div>
+          </div>
+
+
+    </div>
+
+</div>
+  
+
+
+      
+
+
+      
+  <div  class="parent">
+
+
+    <div class="container">
+
+
+        <div class="card" style="width:1000px; margin-top: 3rem ; border:none ;">
+            <div class="card-header px-4" >
+                Synchronization
+            </div>
+            <div class="card-body  bg-dark text-light px-4" >
+                # Download remote changes
+
+
+
+
+                <h6 class="card-title" style=" font-size: 20px;">git fetch</h6>
+              
+              <hr>
+              # Upload local changes
+
+
+              <h6 class="card-title" style=" font-size: 20px;">git push</h6>
+              <hr>
+              # Update local branch
+              <br>
+              # Pull = fetch + merge
+
+
+
+              <h6 class="card-title" style=" font-size: 20px;">git pull</h6>
+              
+              
+            </div>
+          </div>
+
+
+    </div>
+
+
+
+
+
+    <div class="container">
+
+
+        <div class="card" style="width:1000px; margin-top: 3rem ; border:none ;">
+            <div class="card-header px-4" >
+                Undoing Changes
+            </div>
+            <div class="card-body  bg-dark text-light px-4" >
+                # Unstage changes
+
+
+
+
+                <h6 class="card-title" style=" font-size: 20px;">git reset [file]</h6>
+              
+              <hr>
+              # Reset to specific commit (keeps changes)
+
+
+              <h6 class="card-title" style=" font-size: 20px;">git reset [commit-hash]</h6>
+              <hr>
+              # Hard reset (discards all changes)
+              <br>
+              # USE WITH CAUTION
+
+
+
+              <h6 class="card-title" style=" font-size: 20px;">git reset --hard [commit-hash]</h6>
+              
+              
+            </div>
+          </div>
+
+
+    </div>
+
+
+  </div>
+
+
+
+
+   
+     
+
+
+
+    
+</body>
+</html>
